@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/banner-mob.webp" 
+      imagesrcset="assets/images/banner-mob.webp 1x, assets/images/banner-mob-2x.webp 2x" 
+      imagesizes="100vw">
 </head>
 <body>
   <header>
@@ -172,7 +175,7 @@
               <div class="banner__img">
                 <picture>
                   <source srcset="assets/images/banner-mob.webp" media="(max-width: 767px)">
-                  <img src="assets/images/banner.webp" alt="banner1920" loading="lazy">
+                  <img src="assets/images/banner.webp" alt="banner1920" fetchpriority="high">
                 </picture>
               </div>
             </div>
